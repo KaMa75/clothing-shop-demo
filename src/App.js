@@ -1,9 +1,11 @@
-import './App.css';
+import { HomePage } from './pages';
+
+import './App.scss';
 
 function App() {
   return (
     <div>
-      test App
+      <HomePage />
     </div>
   );
 }
