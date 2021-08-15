@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 import './menuItem.scss';
 
@@ -16,6 +17,18 @@ const MenuItem = ({title, subtitle, imageUrl, size}) => {
             </div>
         </div>
     );
+}
+
+MenuItem.defaultProps = {
+    size: '',
+    subtitle: 'shop now'
+}
+
+MenuItem.propTypes = {
+    title: PropTypes.string.isRequired,
+    subtitle: PropTypes.string,
+    imageUrl: PropTypes.string.isRequired,
+    size: PropTypes.string
 }
 
 export default MenuItem;
