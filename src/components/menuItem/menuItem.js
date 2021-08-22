@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router-dom';
 
 import './menuItem.scss';
 
-const MenuItem = ({title, subtitle, imageUrl, size}) => {
+const MenuItem = ({title, subtitle, imageUrl, linkUrl, size, history, match}) => {
     return (
         <div
             className={`menu-item ${size}`}
+            onClick={() => history.push(`${match.url}${linkUrl}`)}
         >
             <div
                 className='background-image'
@@ -31,7 +33,10 @@ MenuItem.propTypes = {
     title: PropTypes.string.isRequired,
     subtitle: PropTypes.string,
     imageUrl: PropTypes.string.isRequired,
-    size: PropTypes.string
+    linkUrl: PropTypes.string.isRequired,
+    size: PropTypes.string,
+    history: PropTypes.string.isRequired,
+    match: PropTypes.string.isRequired
 }
 
-export default MenuItem;
+export default withRouter(MenuItem);

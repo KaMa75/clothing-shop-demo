@@ -15,13 +15,10 @@ class DirectoryMenu extends Component {
         const { menuItems } = this.state;
         return (
             <div className='directory-menu'>
-                {menuItems.map(({id, title, subtitle, imageUrl, size}) => (
+                {menuItems.map(({id, ...otherProps}) => (
                     <MenuItem
                         key = {id}
-                        title = {title}
-                        subtitle = {subtitle}
-                        imageUrl = {imageUrl}
-                        size = {size}
+                        {...otherProps}
                     />
                 ))}
             </div>
