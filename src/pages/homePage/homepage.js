@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { DirectoryMenu } from '../../components/directoryMenu';
+import { DirectoryMenu } from '../../components';
 
 import './homepage.scss';
 

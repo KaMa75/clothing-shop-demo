@@ -1,4 +1,4 @@
-import { HomePage, HatsPage } from './pages';
+import { HomePage, HatsPage, ShopPage } from './pages';
 import { Route, Switch } from 'react-router-dom';
 
 import './App.scss';
@@ -9,6 +9,7 @@ function App() {
       <Switch>
         <Route exact path='/' component={HomePage} />
         <Route exact path='/hats' component={HatsPage} />
+        <Route exact path='/shop' component={ShopPage} />
       </Switch>
     </div>
   );
