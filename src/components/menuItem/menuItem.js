@@ -35,8 +35,8 @@ MenuItem.propTypes = {
     imageUrl: PropTypes.string.isRequired,
     linkUrl: PropTypes.string.isRequired,
     size: PropTypes.string,
-    history: PropTypes.string.isRequired,
-    match: PropTypes.string.isRequired
+    history: PropTypes.object.isRequired,
+    match: PropTypes.object.isRequired
 }
 
 export default withRouter(MenuItem);
