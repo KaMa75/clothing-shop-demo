@@ -1,0 +1,45 @@
+@import '../../scss/index';
+
+.collection-item {
+    width: 100%;
+    margin-bottom: 20px;
+
+    @include sm {
+        width: 49%;
+    }
+
+    @include lg {
+        width: 24%;
+    }
+
+    .image {
+        width: 100%;
+        height: 65vw;
+        margin-bottom: 1%;
+        background-position: center;
+        background-size: cover;
+
+        @include sm {
+            height: 50vw;
+        }
+
+        @include lg {
+            height: 25vw;
+        }
+    }
+
+    .collection-footer {
+        display: flex;
+        justify-content: space-between;
+        height: 8%;
+    }
+
+    .name {
+        width: 80%;
+    }
+
+    .price {
+        width: 20%;
+        text-align: right;
+    }
+}
