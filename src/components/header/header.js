@@ -8,6 +8,10 @@ import './header.scss';
 const Header = () => {
     return (
         <div className='header'>
+            <Link className='logo-container' to='/'>
+                <Logo className='logo' />
+            </Link>
+
             <div className='options'>
                 <Link className='option' to='/shop' >
                     Shop
@@ -22,9 +26,6 @@ const Header = () => {
                     Order
                 </Link>
             </div>
-            <Link className='logo-container' to='/'>
-                <Logo className='logo' />
-            </Link>
         </div>
     );
 }
