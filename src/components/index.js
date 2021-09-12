@@ -7,3 +7,4 @@ export { CollectionPreview } from './collectionPreview';
 export { CollectionItem } from './collectionItem';
 
 export { SignIn } from './signIn';
+export { FormInput } from './formInput';

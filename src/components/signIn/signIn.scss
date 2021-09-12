@@ -1,0 +1,9 @@
+@import '../../scss/index';
+
+.form-section {
+    width: 100%;
+
+    @include md {
+        width: 45%;
+    }
+}
