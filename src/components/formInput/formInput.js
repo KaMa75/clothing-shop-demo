@@ -5,7 +5,6 @@ import { PropTypes } from 'prop-types';
 import './formInput.scss';
 
 const FormInput = ({handleChange, label, ...otherProps}) => {
-    console.log(otherProps);
     return (
         <div className='input-group'>
             <input
