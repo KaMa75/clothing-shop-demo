@@ -8,3 +8,5 @@ export { CollectionItem } from './collectionItem';
 
 export { SignIn } from './signIn';
 export { FormInput } from './formComponents';
+
+export { CustomButton } from './customButton';
