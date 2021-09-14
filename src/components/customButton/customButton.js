@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import './customButton.scss';
 
-const CustomButton = ({children, ...otherProps}) => {
+const CustomButton = ({children, isGoogleSignIn,...otherProps}) => {
     return (
         <button
-            className='custom-button'
+            className={`custom-button ${isGoogleSignIn ? 'google-sign-in' : ''}`}
             {...otherProps}
         >
             {children}
@@ -16,7 +16,8 @@ const CustomButton = ({children, ...otherProps}) => {
 
 CustomButton.propTypes = {
     children: PropTypes.string.isRequired,
-    type: PropTypes.string
+    type: PropTypes.string,
+    isGoogleSignIn: PropTypes.bool
 }
 
 export default CustomButton;

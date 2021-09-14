@@ -61,6 +61,7 @@ class SignIn extends Component {
 
                     <CustomButton
                         onClick={signInWithGoogle}
+                        isGoogleSignIn
                     >
                         Sign in with Google
                     </CustomButton>
