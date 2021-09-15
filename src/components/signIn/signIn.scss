@@ -6,4 +6,10 @@
     @include md {
         width: 45%;
     }
+
+    .form-buttons {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
