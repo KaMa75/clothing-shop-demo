@@ -2,7 +2,7 @@ import { HomePage, HatsPage, ShopPage, SignInPage } from './pages';
 import { Header } from './components';
 import { Route, Switch } from 'react-router-dom';
 
-import { auth } from './firebase/firebase.utils';
+import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 
 import './App.scss';
 import { Component } from 'react';
@@ -16,8 +16,8 @@ class App extends Component {
 
   componentDidMount() {
     this.unsubscribeFromAuth = auth.onAuthStateChanged((user) => {
+      createUserProfileDocument(user);
       this.setState({currentUser: user});
-      console.log(this.state.currentUser);
     });
   }
 
