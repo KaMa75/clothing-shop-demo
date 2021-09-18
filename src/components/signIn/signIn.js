@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { FormInput, CustomButton } from '../';
 
-import { signInWithGoogle } from '../../firebase/firebase.utils';
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 
 import './signIn.scss';
 
@@ -11,13 +11,22 @@ class SignIn extends Component {
         password: ''
     }
 
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
         event.preventDefault();
 
-        this.setState({
-            email: '',
-            password: ''
-        });
+        const {email, password} = this.state;
+
+        try {
+            await auth.signInWithEmailAndPassword(email, password);
+
+            this.setState({
+                email: '',
+                password: ''
+            });
+        } catch(error) {
+            console.log(error);
+        }
+
     }
 
     handleChange = (event) => {
@@ -29,8 +38,9 @@ class SignIn extends Component {
     }
 
     render () {
+        const {email, password} = this.state;
         return (
-            <div className='sign-in form-section'>
+            <div className='form-section'>
                 <h2>I already have an acount</h2>
                 <span>Sign in with your email and password</span>
 
@@ -39,7 +49,7 @@ class SignIn extends Component {
                         name='email'
                         type='email'
                         label='Email'
-                        value={this.state.email}
+                        value={email}
                         handleChange={this.handleChange}
                         required
                     />
@@ -48,7 +58,7 @@ class SignIn extends Component {
                         name='password'
                         type='password'
                         label='Password'
-                        value={this.state.password}
+                        value={password}
                         handleChange={this.handleChange}
                         required
                     />
@@ -61,6 +71,7 @@ class SignIn extends Component {
                         </CustomButton>
 
                         <CustomButton
+                            type='button'
                             onClick={signInWithGoogle}
                             isGoogleSignIn
                         >
