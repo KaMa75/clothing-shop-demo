@@ -36,15 +36,17 @@ class App extends Component {
 
   render() {
     return (
-      <div className='container'>
-      <Header currentUser={this.state.currentUser} />
-        <Switch>
-          <Route exact path='/' component={HomePage} />
-          <Route exact path='/hats' component={HatsPage} />
-          <Route exact path='/shop' component={ShopPage} />
-          <Route exact path='/signin' component={SignInPage} />
-        </Switch>
-      </div>
+
+        <div className='container'>
+          <Header currentUser={this.state.currentUser} />
+          <Switch>
+            <Route exact path='/' component={HomePage} />
+            <Route exact path='/hats' component={HatsPage} />
+            <Route exact path='/shop' component={ShopPage} />
+            <Route exact path='/signin' component={SignInPage} />
+          </Switch>
+        </div>
+
     );
   }
 }
