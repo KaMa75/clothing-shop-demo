@@ -4,8 +4,10 @@ import { connect } from 'react-redux';
 
 import { auth } from '../../firebase/firebase.utils';
 
+import { CartItem } from '../cartIcon';
 import { ReactComponent as Logo } from '../../assets/fashion-logo.svg';
 import './header.scss';
+import CartIcon from '../cartIcon/cartIcon';
 
 const Header = ({currentUser}) => {
     return (
@@ -36,7 +38,7 @@ const Header = ({currentUser}) => {
                     )
                 }
                 <Link className='option' to='/order' >
-                    Order
+                    <CartIcon />
                 </Link>
             </div>
         </div>
