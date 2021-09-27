@@ -20,4 +20,8 @@ CustomButton.propTypes = {
     isGoogleSignIn: PropTypes.bool
 }
 
+CustomButton.defaultProps = {
+    type: 'button'
+}
+
 export default CustomButton;
