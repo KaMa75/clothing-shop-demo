@@ -27,4 +27,8 @@
         cursor: pointer;
     }
 
+    .option:last-child {
+        padding-right: 0;
+    }
+
 }
