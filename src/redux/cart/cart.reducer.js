@@ -5,16 +5,14 @@ const INITIAL_STATE = {
 }
 
 const cartReducer = (state = INITIAL_STATE, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case CartActionTypes.TOGGLE_CART_VIEW:
             return {
                 ...state,
                 isHidden: !state.isHidden
             }
         default:
-            return {
-                state
-            }
+            return state;
     }
 }
 
