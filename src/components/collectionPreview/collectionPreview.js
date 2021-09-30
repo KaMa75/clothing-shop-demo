@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 import './collectionPreview.scss';
 
 const CollectionPreview = ({title, items}) => {
-    console.log(title)
     return (
         <div className='collection-preview'>
             <h1 className='title'>
