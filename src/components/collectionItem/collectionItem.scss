@@ -18,6 +18,11 @@
         margin-bottom: 1%;
         background-position: center;
         background-size: cover;
+        padding-bottom: 1vw;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        transition-duration: 0.2s;
 
         @include sm {
             height: 50vw;
@@ -26,6 +31,16 @@
         @include lg {
             height: 25vw;
         }
+
+        &:hover {
+            opacity: 0.9;
+        }
+
+        button {
+            width: 80%;
+            opacity: 0.9;
+        }
+
     }
 
     .collection-footer {

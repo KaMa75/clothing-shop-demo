@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 import './customButton.scss';
 
-const CustomButton = ({children, isGoogleSignIn,...otherProps}) => {
+const CustomButton = ({children, isGoogleSignIn, inverted, ...otherProps}) => {
     return (
         <button
-            className={`custom-button ${isGoogleSignIn ? 'google-sign-in' : ''}`}
+            className={`${isGoogleSignIn ? 'google-sign-in' : ''} ${inverted ? 'inverted' : ''} custom-button`}
             {...otherProps}
         >
             {children}
@@ -17,11 +17,13 @@ const CustomButton = ({children, isGoogleSignIn,...otherProps}) => {
 CustomButton.propTypes = {
     children: PropTypes.string.isRequired,
     type: PropTypes.string,
-    isGoogleSignIn: PropTypes.bool
+    isGoogleSignIn: PropTypes.bool,
+    inverted: PropTypes.bool
 }
 
 CustomButton.defaultProps = {
-    type: 'button'
+    type: 'button',
+    inverted: false
 }
 
 export default CustomButton;

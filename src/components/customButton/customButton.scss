@@ -16,6 +16,7 @@
     cursor: pointer;
     border: 1px solid black;
     margin-bottom: 25px;
+    transition-duration: 0.3s;
 
     @include sm {
         width: 35%;
@@ -46,6 +47,17 @@
         &:hover {
             background-color: #357ae8;
             border: 1px solid #357ae8;
+        }
+    }
+
+    &.inverted {
+        background-color: white;
+        color: black;
+        border: none;
+
+        &:hover {
+            background-color: black;
+            color: white;
         }
     }
 }

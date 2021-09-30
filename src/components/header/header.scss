@@ -10,6 +10,11 @@
         height: 100%;
         width: 100px;
         cursor: pointer;
+        transition-duration: 0.2s;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     .logo {
@@ -26,6 +31,11 @@
     .option {
         padding-right: 15px;
         cursor: pointer;
+        transition-duration: 0.2s;
+
+        &:hover {
+            opacity: 0.6;
+        }
     }
 
     .option:last-child {
