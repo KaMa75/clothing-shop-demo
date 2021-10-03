@@ -1,21 +1,22 @@
 import React from 'react';
-import PropTypes, { array } from 'prop-types';
+import PropTypes from 'prop-types';
 import { CartItem } from '../cartItem';
 import { CustomButton } from '../customButton';
 
 import { connect } from 'react-redux';
 
 import './cartDropdown.scss';
+import { EmptyState } from '../emptyState';
 
 const CartDropdown = ({cartItems}) => {
     console.log(cartItems)
     return (
         <div className='cart-dropdown'>
-            <div className='cart-items'>
-                {cartItems.length > 0
+            <div className='cart-items'>{
+                cartItems.length > 0
                 ? cartItems.map(cartItem => <CartItem key={cartItem.id} {...cartItem} />)
-                : 'Your cart is empty'}
-            </div>
+                : <EmptyState>Your cart is empty</EmptyState>
+            }</div>
             <CustomButton>Go to checkout</CustomButton>
         </div>
     );
@@ -26,7 +27,7 @@ const mapStateToProps = state => ({
 });
 
 CartDropdown.propTypes = {
-    cartItems: array
+    cartItems: PropTypes.array
 }
 
 export default connect(mapStateToProps)(CartDropdown);
