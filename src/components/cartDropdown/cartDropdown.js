@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withRouter } from 'react-router';
 
 import { CartItem } from '../cartItem';
 import { CustomButton } from '../customButton';
@@ -11,7 +12,7 @@ import { selectCartItems } from '../../redux/cart';
 import './cartDropdown.scss';
 import { EmptyState } from '../emptyState';
 
-const CartDropdown = ({cartItems}) => {
+const CartDropdown = ({cartItems, history}) => {
     return (
         <div className='cart-dropdown'>
             <div className='cart-items'>{
@@ -19,7 +20,7 @@ const CartDropdown = ({cartItems}) => {
                 ? cartItems.map(cartItem => <CartItem key={cartItem.id} {...cartItem} />)
                 : <EmptyState>Your cart is empty</EmptyState>
             }</div>
-            <CustomButton>Go to checkout</CustomButton>
+            <CustomButton onClick={()=>history.push('/checkout')}>Go to checkout</CustomButton>
         </div>
     );
 }
@@ -32,4 +33,4 @@ CartDropdown.propTypes = {
     cartItems: PropTypes.array
 }
 
-export default connect(mapStateToProps)(CartDropdown);
+export default withRouter(connect(mapStateToProps)(CartDropdown));
