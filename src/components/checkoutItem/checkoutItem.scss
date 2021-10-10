@@ -32,6 +32,19 @@
         width: 23%;
     }
 
+    .quantity {
+        display: flex;
+
+        .arrow {
+            padding: 0 8px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.6;
+            }
+        }
+    }
+
     .remove-button {
         padding-left: 12px;
         cursor: pointer;
