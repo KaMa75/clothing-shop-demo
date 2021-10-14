@@ -3,6 +3,7 @@ export { Header } from './header';
 export { DirectoryMenu } from './directoryMenu';
 export { MenuItem } from './menuItem';
 
+export { CollectionsOverview } from './collectionOverview';
 export { CollectionPreview } from './collectionPreview';
 export { CollectionItem } from './collectionItem';
 
