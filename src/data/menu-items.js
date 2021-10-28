@@ -4,36 +4,36 @@ export const menuItems = [
         title: 'hats',
         subtitle: 'shop now',
         imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
-        linkUrl: 'hats'
+        linkUrl: 'shop/hats'
     },
     {
         id: 2,
         title: 'jackets',
         subtitle: 'shop now',
         imageUrl: 'https://i.ibb.co/px2tCc3/jackets.png',
-        linkUrl: 'jackets'
+        linkUrl: 'shop/jackets'
     },
     {
         id: 3,
         title: 'sneakers',
         subtitle: 'shop now',
         imageUrl: 'https://i.ibb.co/0jqHpnp/sneakers.png',
-        linkUrl: 'sneakers'
+        linkUrl: 'shop/sneakers'
     },
     {
         id: 4,
-        title: 'womans',
+        title: 'womens',
         subtitle: 'shop now',
         imageUrl: 'https://i.ibb.co/GCCdy8t/womens.png',
         size: 'large',
-        linkUrl: 'womans'
+        linkUrl: 'shop/womens'
     },
     {
         id: 5,
-        title: 'mans',
+        title: 'mens',
         subtitle: 'shop now',
         imageUrl: 'https://i.ibb.co/R70vBrQ/men.png',
         size: 'large',
-        linkUrl: 'mans'
+        linkUrl: 'shop/mens'
     }
 ];
