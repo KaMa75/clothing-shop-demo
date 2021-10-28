@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/clothing-shop-demo/static/css/main.5046dd41.chunk.css",
-    "main.js": "/clothing-shop-demo/static/js/main.01cf0a49.chunk.js",
-    "main.js.map": "/clothing-shop-demo/static/js/main.01cf0a49.chunk.js.map",
+    "main.css": "/clothing-shop-demo/static/css/main.6346db9a.chunk.css",
+    "main.js": "/clothing-shop-demo/static/js/main.0a2082e9.chunk.js",
+    "main.js.map": "/clothing-shop-demo/static/js/main.0a2082e9.chunk.js.map",
     "runtime-main.js": "/clothing-shop-demo/static/js/runtime-main.63670d82.js",
     "runtime-main.js.map": "/clothing-shop-demo/static/js/runtime-main.63670d82.js.map",
-    "static/js/2.4b759ce0.chunk.js": "/clothing-shop-demo/static/js/2.4b759ce0.chunk.js",
-    "static/js/2.4b759ce0.chunk.js.map": "/clothing-shop-demo/static/js/2.4b759ce0.chunk.js.map",
+    "static/js/2.c7322189.chunk.js": "/clothing-shop-demo/static/js/2.c7322189.chunk.js",
+    "static/js/2.c7322189.chunk.js.map": "/clothing-shop-demo/static/js/2.c7322189.chunk.js.map",
     "index.html": "/clothing-shop-demo/index.html",
-    "static/css/main.5046dd41.chunk.css.map": "/clothing-shop-demo/static/css/main.5046dd41.chunk.css.map",
-    "static/js/2.4b759ce0.chunk.js.LICENSE.txt": "/clothing-shop-demo/static/js/2.4b759ce0.chunk.js.LICENSE.txt",
+    "static/css/main.6346db9a.chunk.css.map": "/clothing-shop-demo/static/css/main.6346db9a.chunk.css.map",
+    "static/js/2.c7322189.chunk.js.LICENSE.txt": "/clothing-shop-demo/static/js/2.c7322189.chunk.js.LICENSE.txt",
     "static/media/fashion-logo.85f1f937.svg": "/clothing-shop-demo/static/media/fashion-logo.85f1f937.svg",
     "static/media/shopping-bag.a688874f.svg": "/clothing-shop-demo/static/media/shopping-bag.a688874f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.63670d82.js",
-    "static/js/2.4b759ce0.chunk.js",
-    "static/css/main.5046dd41.chunk.css",
-    "static/js/main.01cf0a49.chunk.js"
+    "static/js/2.c7322189.chunk.js",
+    "static/css/main.6346db9a.chunk.css",
+    "static/js/main.0a2082e9.chunk.js"
   ]
 }
