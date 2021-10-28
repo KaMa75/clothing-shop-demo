@@ -1,3 +1,5 @@
+@import '../../scss/index';
+
 .collection-preview {
 
     .title {
@@ -6,9 +8,18 @@
     }
 
     .preview {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+
+        @include sm {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include lg {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
     }
 
 }

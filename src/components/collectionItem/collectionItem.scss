@@ -4,17 +4,9 @@
     width: 100%;
     margin-bottom: 20px;
 
-    @include sm {
-        width: 49%;
-    }
-
-    @include lg {
-        width: 24%;
-    }
-
     .image {
         width: 100%;
-        height: 65vw;
+        height: 120vw;
         margin-bottom: 1%;
         background-position: center;
         background-size: cover;
@@ -25,11 +17,11 @@
         transition-duration: 0.2s;
 
         @include sm {
-            height: 50vw;
+            height: 60vw;
         }
 
         @include lg {
-            height: 25vw;
+            height: 30vw;
         }
 
         &:hover {
